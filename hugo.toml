@@ -3,18 +3,31 @@ languageCode = 'en-us'
 title = 'Michael Fomenko'
 theme = 'gokarna'
 
+
+[params]
+footer = 'Michael Fomenko'
+avatarURL = '/images/avatar.png'
+socialIcons = [
+    { name = "github", url = "https://github.com/michaelfmnk" },
+    { name = "Linkedin", url = "https://www.linkedin.com/in/michael-fomenko-602ab0116/" },
+    { name = "instagram", url = "https://www.instagram.com/michael_fmnk/" },
+    { name = "email", url = "mailto:michael@fomenko.dev" }
+]
+
+
 [menu]
-  [[menu.main]]
-    name = 'Home'
-    url = '/'
-    weight = 1
+[[menu.main]]
+name = 'Home'
+url = '/'
+weight = 1
 
-  [[menu.main]]
-    name = 'About'
-    url = '/about/'
-    weight = 3
+[[menu.main]]
+name = 'Posts'
+url = '/posts/'
+weight = 2
 
-  [[menu.main]]
-    name = 'Posts'
-    url = '/posts/'
-    weight = 2
+[[menu.main]]
+name = 'Projects'
+url = '/projects/'
+weight = 3
+

@@ -1,5 +1,3 @@
-# About Me - Michael Fomenko
-
 ## Experience
 
 ### Software Engineer - OpenVPN-as-a-Service
@@ -35,5 +33,4 @@ Developed healthcare applications, CRM, and logistics solutions with Java, Kotli
 - **Thinking in Java** - Bruce Eckel
 
 ## Certifications
-
-[Link to Certifications and More Information](https://www.fomenko.dev/about-me)
+[Link to Certifications and More Information](https://www.linkedin.com/in/michael-fomenko-602ab0116/details/certifications)
