@@ -51,7 +51,7 @@ class FakeController {
 
 And the response it provides:
 
-```
+```http request
 HTTP/1.1 404
 StatusDog: https://httpstatusdogs.com/img/404.jpg
 Content-Type: text/plain;charset=UTF-8
@@ -66,12 +66,6 @@ You can find the code on my GitHub: [https://github.com/michaelfmnk/httpstatusdo
 Maven Central: [https://search.maven.org/artifact/dev.fomenko/httpstatusdogs/1.0.0/jar](https://search.maven.org/artifact/dev.fomenko/httpstatusdogs/1.0.0/jar)
 
 P.S: For me, this lib is an attempt at releasing my own library. I'm planning on releasing my other projects soon.
-
-## Recent Posts
-
-- [How to debug a problem you cannot reproduce](https://www.fomenko.dev/post/how-to-debug-a-problem-you-cannot-reproduce)
-- [Check out Spring Undo ↩️ v0.0.1!](https://www.fomenko.dev/post/check-out-spring-undo-v0-0-1)
-- [Developing Send-To-Kindle Telegram Bot](https://www.fomenko.dev/post/developing-send-to-kindle-telegram-bot)
 
 ---
 

@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://fomenko.dev/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Michael Fomenko'
 theme = 'gokarna'
 
 [menu]
