@@ -9,7 +9,7 @@ footer = 'Michael Fomenko'
 avatarURL = '/images/avatar.png'
 socialIcons = [
     { name = "github", url = "https://github.com/michaelfmnk" },
-    { name = "Linkedin", url = "https://www.linkedin.com/in/michael-fomenko-602ab0116/" },
+    { name = "linkedin", url = "https://www.linkedin.com/in/michael-fomenko-602ab0116/" },
     { name = "instagram", url = "https://www.instagram.com/michael_fmnk/" },
     { name = "email", url = "mailto:michael@fomenko.dev" }
 ]
