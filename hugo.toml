@@ -3,6 +3,8 @@ languageCode = 'en-us'
 title = 'Michael Fomenko'
 theme = 'gokarna'
 
+[markup.goldmark.renderer]
+unsafe = true
 
 [params]
 footer = 'Michael Fomenko'
