@@ -52,6 +52,11 @@ aliases:
 </section>
 
 <section class="slowka-section">
+<h2>Support</h2>
+<p>Need help with Słówka? Visit the <a href="/slowka/support/">support page</a> or email <a href="mailto:michael@fomenko.dev">michael@fomenko.dev</a>.</p>
+</section>
+
+<section class="slowka-section">
 <h2>Privacy</h2>
 <p>Słówka is designed to keep dictionary use local to your device. Read the <a href="/slowka/privacy/">privacy policy</a> for details.</p>
 <p class="slowka-note">Contact: <a href="mailto:michael@fomenko.dev">michael@fomenko.dev</a></p>

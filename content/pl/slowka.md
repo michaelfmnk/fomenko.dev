@@ -52,6 +52,11 @@ aliases:
 </section>
 
 <section class="slowka-section">
+<h2>Wsparcie</h2>
+<p>Potrzebujesz pomocy ze Słówka? Przejdź na <a href="/pl/slowka/support/">stronę wsparcia</a> albo napisz na <a href="mailto:michael@fomenko.dev">michael@fomenko.dev</a>.</p>
+</section>
+
+<section class="slowka-section">
 <h2>Prywatność</h2>
 <p>Słówka działa tak, aby korzystanie ze słownika pozostawało lokalnie na Twoim urządzeniu. Szczegóły znajdziesz w <a href="/pl/slowka/privacy/">polityce prywatności</a>.</p>
 <p class="slowka-note">Kontakt: <a href="mailto:michael@fomenko.dev">michael@fomenko.dev</a></p>
