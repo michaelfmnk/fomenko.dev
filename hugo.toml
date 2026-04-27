@@ -33,3 +33,7 @@ name = 'Projects'
 url = '/projects/'
 weight = 2
 
+[[menu.main]]
+name = 'Słówka'
+url = '/slowka/'
+weight = 4
