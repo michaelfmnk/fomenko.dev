@@ -6,16 +6,6 @@ aliases:
   - "/slowko/privacy/"
 ---
 
-<link rel="stylesheet" href="/css/slowka.css">
-
-<div class="slowka-page">
-<div class="slowka-topbar">
-<div class="slowka-lang" aria-label="Language switcher">
-<a class="slowka-lang-link is-active" href="/slowka/privacy/" aria-current="page">EN</a>
-<a class="slowka-lang-link" href="/pl/slowka/privacy/">PL</a>
-</div>
-</div>
-
 <h1>Słówka Privacy Policy</h1>
 <p class="slowka-note">Last updated: April 25, 2026</p>
 
@@ -33,4 +23,3 @@ aliases:
 
 <h2>Contact</h2>
 <p>For privacy questions, contact <a href="mailto:michael@fomenko.dev">michael@fomenko.dev</a>.</p>
-</div>

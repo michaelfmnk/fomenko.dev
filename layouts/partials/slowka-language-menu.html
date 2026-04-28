@@ -1,0 +1,39 @@
+{{- $currentLang := index .Params "html_lang" | default "en" -}}
+{{- $suffix := "" -}}
+{{- if in .RelPermalink "/support/" -}}
+    {{- $suffix = "support/" -}}
+{{- else if in .RelPermalink "/privacy/" -}}
+    {{- $suffix = "privacy/" -}}
+{{- end -}}
+{{- $langs := slice
+    (dict "code" "en" "short" "EN" "name" "English" "href" (printf "/slowka/%s" $suffix))
+    (dict "code" "pl" "short" "PL" "name" "Polski" "href" (printf "/pl/slowka/%s" $suffix))
+    (dict "code" "uk" "short" "UK" "name" "Українська" "href" (printf "/uk/slowka/%s" $suffix))
+    (dict "code" "ru" "short" "RU" "name" "Русский" "href" (printf "/ru/slowka/%s" $suffix))
+    (dict "code" "de" "short" "DE" "name" "Deutsch" "href" (printf "/de/slowka/%s" $suffix))
+-}}
+{{- $currentShort := "EN" -}}
+{{- $currentName := "English" -}}
+{{- range $langs -}}
+    {{- if eq .code $currentLang -}}
+        {{- $currentShort = .short -}}
+        {{- $currentName = .name -}}
+    {{- end -}}
+{{- end -}}
+
+<div class="slowka-topbar">
+<details class="slowka-lang-menu">
+<summary class="slowka-lang-trigger" aria-label="Language">
+<span class="slowka-lang-current-code">{{ $currentShort }}</span>
+<span class="slowka-lang-current-name">{{ $currentName }}</span>
+</summary>
+<div class="slowka-lang-menu-panel">
+{{- range $langs }}
+<a class="slowka-lang-menu-link{{ if eq .code $currentLang }} is-active{{ end }}" href="{{ .href }}"{{ if eq .code $currentLang }} aria-current="page"{{ end }}>
+<span class="slowka-lang-menu-code">{{ .short }}</span>
+<span>{{ .name }}</span>
+</a>
+{{- end }}
+</div>
+</details>
+</div>

@@ -40,38 +40,84 @@
     line-height: 1.55;
 }
 
-.slowka-actions,
-.slowka-lang {
+.slowka-actions {
     display: flex;
     gap: 12px;
     align-items: center;
 }
 
-.slowka-lang {
-    gap: 8px;
-    border: 1px solid rgba(128, 128, 128, 0.28);
-    border-radius: 8px;
-    padding: 4px;
+.slowka-lang-menu {
+    position: relative;
 }
 
-.slowka-lang-link {
+.slowka-lang-trigger {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    min-width: 42px;
+    gap: 8px;
     min-height: 34px;
-    padding: 0 10px;
-    border: 1px solid transparent;
+    padding: 0 12px;
+    border: 1px solid rgba(128, 128, 128, 0.28);
     border-radius: 6px;
+    background: transparent;
     color: inherit;
     font-size: 0.85rem;
     font-weight: 700;
     line-height: 1;
+    cursor: pointer;
+    list-style: none;
+}
+
+.slowka-lang-trigger::-webkit-details-marker {
+    display: none;
+}
+
+.slowka-lang-trigger::after {
+    width: 7px;
+    height: 7px;
+    margin-left: 4px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    content: "";
+    transform: rotate(45deg) translateY(-2px);
+}
+
+.slowka-lang-menu[open] .slowka-lang-trigger::after {
+    transform: rotate(225deg) translate(-1px, -1px);
+}
+
+.slowka-lang-current-code,
+.slowka-lang-menu-code {
+    font-weight: 800;
+}
+
+.slowka-lang-menu-panel {
+    position: absolute;
+    z-index: 20;
+    top: calc(100% + 8px);
+    right: 0;
+    min-width: 180px;
+    padding: 6px;
+    border: 1px solid rgba(128, 128, 128, 0.28);
+    border-radius: 8px;
+    background: rgb(var(--dark-primary-color, var(--light-primary-color)));
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.14);
+    color: var(--dark-text-color, var(--light-text-color));
+}
+
+.slowka-lang-menu-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 6px;
+    color: inherit;
+    font-size: 0.95rem;
+    line-height: 1.2;
     text-decoration: none;
 }
 
-.slowka-lang-link.is-active {
-    border-color: #0a84ff;
+.slowka-lang-menu-link:hover,
+.slowka-lang-menu-link.is-active {
     background: #0a84ff;
     color: #fff;
 }

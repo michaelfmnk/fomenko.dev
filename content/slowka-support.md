@@ -6,16 +6,6 @@ aliases:
   - "/slowko/support/"
 ---
 
-<link rel="stylesheet" href="/css/slowka.css">
-
-<div class="slowka-page">
-<div class="slowka-topbar">
-<div class="slowka-lang" aria-label="Language switcher">
-<a class="slowka-lang-link is-active" href="/slowka/support/" aria-current="page">EN</a>
-<a class="slowka-lang-link" href="/pl/slowka/support/">PL</a>
-</div>
-</div>
-
 <h1>Słówka Support</h1>
 <p class="slowka-lead">Help for Słówka, the offline Polish dictionary for iPhone and iPad.</p>
 
@@ -34,4 +24,3 @@ aliases:
 
 <h2>Privacy</h2>
 <p>Słówka is designed to keep dictionary use local to your device. Read the <a href="/slowka/privacy/">privacy policy</a> for details.</p>
-</div>

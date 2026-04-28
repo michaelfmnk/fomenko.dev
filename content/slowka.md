@@ -5,16 +5,6 @@ aliases:
   - "/slowko/"
 ---
 
-<link rel="stylesheet" href="/css/slowka.css">
-
-<div class="slowka-page">
-<div class="slowka-topbar">
-<div class="slowka-lang" aria-label="Language switcher">
-<a class="slowka-lang-link is-active" href="/slowka/" aria-current="page">EN</a>
-<a class="slowka-lang-link" href="/pl/slowka/">PL</a>
-</div>
-</div>
-
 <section class="slowka-hero">
 <div>
 <p class="slowka-kicker">Polish dictionary for iPhone and iPad</p>
@@ -61,4 +51,3 @@ aliases:
 <p>Słówka is designed to keep dictionary use local to your device. Read the <a href="/slowka/privacy/">privacy policy</a> for details.</p>
 <p class="slowka-note">Contact: <a href="mailto:michael@fomenko.dev">michael@fomenko.dev</a></p>
 </section>
-</div>

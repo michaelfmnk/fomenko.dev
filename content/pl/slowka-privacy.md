@@ -1,20 +1,11 @@
 ---
 title: "Słówka - polityka prywatności"
 type: "slowka"
+html_lang: "pl"
 url: "/pl/slowka/privacy/"
 aliases:
   - "/pl/slowko/privacy/"
 ---
-
-<link rel="stylesheet" href="/css/slowka.css">
-
-<div class="slowka-page">
-<div class="slowka-topbar">
-<div class="slowka-lang" aria-label="Przełącznik języka">
-<a class="slowka-lang-link" href="/slowka/privacy/">EN</a>
-<a class="slowka-lang-link is-active" href="/pl/slowka/privacy/" aria-current="page">PL</a>
-</div>
-</div>
 
 <h1>Polityka prywatności Słówka</h1>
 <p class="slowka-note">Ostatnia aktualizacja: 25 kwietnia 2026</p>
@@ -33,4 +24,3 @@ aliases:
 
 <h2>Kontakt</h2>
 <p>W sprawach prywatności napisz na <a href="mailto:michael@fomenko.dev">michael@fomenko.dev</a>.</p>
-</div>

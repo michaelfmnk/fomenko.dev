@@ -1,19 +1,10 @@
 ---
 title: "Słówka - słownik polski"
 type: "slowka"
+html_lang: "pl"
 aliases:
   - "/pl/slowko/"
 ---
-
-<link rel="stylesheet" href="/css/slowka.css">
-
-<div class="slowka-page">
-<div class="slowka-topbar">
-<div class="slowka-lang" aria-label="Przełącznik języka">
-<a class="slowka-lang-link" href="/slowka/">EN</a>
-<a class="slowka-lang-link is-active" href="/pl/slowka/" aria-current="page">PL</a>
-</div>
-</div>
 
 <section class="slowka-hero">
 <div>
@@ -61,4 +52,3 @@ aliases:
 <p>Słówka działa tak, aby korzystanie ze słownika pozostawało lokalnie na Twoim urządzeniu. Szczegóły znajdziesz w <a href="/pl/slowka/privacy/">polityce prywatności</a>.</p>
 <p class="slowka-note">Kontakt: <a href="mailto:michael@fomenko.dev">michael@fomenko.dev</a></p>
 </section>
-</div>
