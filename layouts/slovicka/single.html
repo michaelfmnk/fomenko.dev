@@ -1,0 +1,7 @@
+{{ define "main" }}
+    <link rel="stylesheet" href="/css/slowka.css">
+    <div class="slowka-page">
+    {{ partial "slovicka-language-menu.html" . }}
+    {{ .Content }}
+    </div>
+{{ end }}
