@@ -12,6 +12,9 @@ aliases:
 <p class="slowka-kicker">Polnisches Wörterbuch für iPhone und iPad</p>
 <h1 class="slowka-title">Słówka</h1>
 <p class="slowka-lead">Ein schnelles Offline-Wörterbuch für Polnisch. Es enthält vollständige Deklinations- und Konjugationstabellen, native Audioaussprache und Etymologie.</p>
+<div class="slowka-actions">
+{{< appstore-badge href="https://apps.apple.com/app/id6762407590" small="Laden im" >}}
+</div>
 </div>
 <div class="slowka-hero-media">
 <img class="slowka-phone" src="/images/slowka/02-word-dom-framed.png" alt="Słówka-Wörterbucheintrag für das polnische Wort dom">

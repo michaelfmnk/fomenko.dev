@@ -12,6 +12,9 @@ aliases:
 <p class="slowka-kicker">Słownik polski na iPhone'a i iPada</p>
 <h1 class="slowka-title">Słówka</h1>
 <p class="slowka-lead">Szybki słownik języka polskiego offline. Zawiera pełne tabele odmiany, wymowę lektora oraz etymologię.</p>
+<div class="slowka-actions">
+{{< appstore-badge href="https://apps.apple.com/app/id6762407590" small="Pobierz z" >}}
+</div>
 </div>
 <div class="slowka-hero-media">
 <img class="slowka-phone" src="/images/slowka/02-word-dom-framed.png" alt="Ekran hasła dom w aplikacji Słówka">
