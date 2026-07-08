@@ -8,6 +8,7 @@ aliases:
 
 <section class="slowka-hero">
 <div>
+<img class="slowka-app-icon" src="/images/slowka/icon.png" alt="Ikona aplikacji Słówka">
 <p class="slowka-kicker">Słownik polski na iPhone'a i iPada</p>
 <h1 class="slowka-title">Słówka</h1>
 <p class="slowka-lead">Szybki słownik języka polskiego offline. Zawiera pełne tabele odmiany, wymowę lektora oraz etymologię.</p>

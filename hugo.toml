@@ -34,6 +34,19 @@ url = '/projects/'
 weight = 2
 
 [[menu.main]]
-name = 'Słówka'
-url = '/slowka/'
+identifier = 'ios-apps'
+name = 'iOS Apps'
+url = '#'
 weight = 4
+
+[[menu.main]]
+name = 'Słówka'
+parent = 'ios-apps'
+url = '/slowka/'
+weight = 1
+
+[[menu.main]]
+name = 'Slovíčka'
+parent = 'ios-apps'
+url = '/slovicka/'
+weight = 2

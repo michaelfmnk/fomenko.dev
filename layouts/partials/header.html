@@ -1,3 +1,69 @@
+<style>
+.nav-has-dropdown {
+    position: relative;
+}
+
+.nav-dropdown-toggle {
+    cursor: default;
+}
+
+.nav-dropdown-toggle::after {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-left: 6px;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    content: "";
+    transform: rotate(45deg) translateY(-2px);
+}
+
+.nav-dropdown-panel {
+    position: absolute;
+    z-index: 30;
+    top: 100%;
+    left: 0;
+    min-width: 180px;
+    padding: 6px;
+    border: 1px solid rgba(128, 128, 128, 0.28);
+    border-radius: 8px;
+    background: rgb(var(--dark-primary-color, var(--light-primary-color)));
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.14);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.12s ease;
+}
+
+.nav-has-dropdown:hover .nav-dropdown-panel,
+.nav-has-dropdown:focus-within .nav-dropdown-panel {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-dropdown-panel a {
+    display: block;
+    padding: 8px 12px;
+    border-radius: 6px;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.nav-dropdown-panel a:hover {
+    background: #0a84ff;
+    color: #fff;
+}
+
+.nav-hamburger-list .nav-item-group {
+    opacity: 0.6;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.nav-hamburger-list .nav-subitem {
+    padding-left: 16px;
+}
+</style>
 <header class="header">
     <nav class="header-nav">
 
@@ -7,11 +73,24 @@
 
         <div class="nav-links">
             {{ range .Site.Menus.main }}
+            {{ if .HasChildren }}
+            <div class="nav-link nav-has-dropdown">
+                <a href="#" class="nav-dropdown-toggle" onclick="return false;">{{ .Name }}</a>
+                <div class="nav-dropdown-panel">
+                    {{ range .Children }}
+                    <a href="{{ .URL | absURL }}" {{- if .Params.NewPage -}}target="_blank"{{- end -}}>
+                        {{- .Pre | safeHTML }} {{ .Name }} {{ .Post | safeHTML -}}
+                    </a>
+                    {{ end }}
+                </div>
+            </div>
+            {{ else }}
             <div class="nav-link">
                 <a href="{{ .URL | absURL }}" {{- if .Params.NewPage -}}target="_blank"{{- end -}}>
                     {{- .Pre | safeHTML }} {{ .Name }} {{ .Post | safeHTML -}}
                 </a>
             </div>
+            {{ end }}
             {{ end }}
 
             <span class="nav-icons-divider"></span>
@@ -32,11 +111,22 @@
             <!-- For mobile -->
             <ul class="nav-hamburger-list visibility-hidden">
                 {{ range .Site.Menus.main }}
+                {{ if .HasChildren }}
+                <li class="nav-item nav-item-group">{{ .Name }}</li>
+                {{ range .Children }}
+                <li class="nav-item nav-subitem">
+                    <a href="{{ .URL | absURL }}" {{- if .Params.NewPage -}}target="_blank"{{- end -}}>
+                        {{- .Pre | safeHTML }} {{ .Name }} {{ .Post | safeHTML -}}
+                    </a>
+                </li>
+                {{ end }}
+                {{ else }}
                 <li class="nav-item">
                     <a href="{{ .URL | absURL }}" {{- if .Params.NewPage -}}target="_blank"{{- end -}}>
                         {{- .Pre | safeHTML }} {{ .Name }} {{ .Post | safeHTML -}}
                     </a>
                 </li>
+                {{ end }}
                 {{ end }}
                 <li class="nav-item dark-theme-toggle">
                     <span class="sr-only dark-theme-toggle-screen-reader-target">theme</span>

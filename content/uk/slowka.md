@@ -8,6 +8,7 @@ aliases:
 
 <section class="slowka-hero">
 <div>
+<img class="slowka-app-icon" src="/images/slowka/icon.png" alt="Іконка застосунку Słówka">
 <p class="slowka-kicker">Польський словник для iPhone та iPad</p>
 <h1 class="slowka-title">Słówka</h1>
 <p class="slowka-lead">Швидкий офлайн-словник польської мови. Він містить повні таблиці відмінювання й дієвідмінювання, аудіовимову носіїв мови та етимологію.</p>
